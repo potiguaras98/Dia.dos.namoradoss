@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕Feliz Dia dos Namorados 💕</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff6666;
+        }
+        p {
+            color: #333333;
+            font-size: 18px;
+        }
+        .message {
+            background-color: #fff0f0;
+            border: 2px solid #ff6666;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery img {
+            border: 5px solid #ff6666;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #999999;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .popup-button {
+            background-color: #ff6666;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /* Estilo da janela modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            border: 2px solid #ff6666;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        .close-button {
+            color: #ff6666;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Dia dos Namorados, meu beeem!</h1>
+    <div class="message">
+        <p>Mariana, MINHA NAMORADA MARAVILHOSA</p>
+        <p>Meu amor, antes de mais nada queria agradecer por tudo que você tem feito por a gente, por tudo que você tem sido. Você traz paz, inspiração, coragem e tesão na vida. Tudo fica mais leve com você aqui comigo. </p>
+        <p>Sou chato e insuportável as vezes. Até minha forma de demonstrar amor - te cutucando - te dá desconforto. Deixe eu te cutucar, deixe eu morder seu dente, e pare de franzir a testa viu?</p>
+<p>Mesmo com meus surtos você se faz presente o tempo todo. Como costumo dizer: você é minha melhor amiga, a pessoa que mais confio nesse mundo. E já que amigos de verdade sempre estão ali para o que der e vier, você honra bem esse "título". </p>
+        <p>Amo o que temos, amo sua companhia, amo sua família, amo o Tobs, amo amar o nosso amor</p>
+        <p>AMO AMAR VOCÊ!!!❤</p>
+	<p></p>
+	<p>Abaixo umas fotinhas nossas 👇</p>
+	
+    </div>
+    <div class="gallery">
+        <img src="foto1.jpg" alt="Foto 1">
+	<img src="foto2.jpeg" alt="Foto 3">
+        <img src="foto3.jpg" alt="Foto 3">
+	<img src="foto4.jpg" alt="Foto 2">
+    </div>
+	<p><b>ATENÇÃO</b></p>
+	<p>Ao clicar no botão "Realizar Contrato" estará oficializado que ficaremos juntos pelo resto da vida.</p>
+    <div class="button-container">
+        <button class="popup-button" onclick="openPopup()">Realizar Contrato</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <p>Contrato realizado com sucesso! Você passará o resto de sua vida ao lado de Guilherme Henrique da Silva Brito.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Fecha o modal quando o usuário clica fora da janela modal
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
